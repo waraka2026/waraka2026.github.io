@@ -597,9 +597,9 @@
     }
 
     .news-card {
-      display: grid;
-      grid-template-columns: minmax(220px, .8fr) 1.2fr;
-      gap: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
       margin-top: 34px;
       border: 2px solid var(--ink);
       border-radius: 28px;
@@ -608,11 +608,31 @@
       box-shadow: 6px 6px 0 var(--ink);
     }
 
+    .news-card-head {
+      text-align: center;
+    }
+
+    .news-card-head h3 {
+      margin: 0 0 6px;
+      font: 800 clamp(28px, 4.5vw, 44px)/1.15 "Noto Sans JP", sans-serif;
+      letter-spacing: -.06em;
+    }
+
+    .news-card-date {
+      margin: 0;
+      font: 500 11px/1 "DM Mono", monospace;
+      letter-spacing: .04em;
+      color: rgba(37, 36, 61, .7);
+    }
+
     .news-card-image {
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto;
       border: 1.5px solid var(--ink);
       border-radius: 22px;
       overflow: hidden;
-      background: #fff;
+      background: var(--mint);
       aspect-ratio: 1280 / 900;
     }
 
@@ -627,23 +647,6 @@
       display: flex;
       flex-direction: column;
       min-width: 0;
-    }
-
-    .news-card-head {
-      margin-bottom: 12px;
-    }
-
-    .news-card-head h3 {
-      margin: 0 0 4px;
-      font-size: clamp(19px, 2.2vw, 24px);
-      letter-spacing: -.04em;
-    }
-
-    .news-card-date {
-      margin: 0;
-      font: 500 11px/1 "DM Mono", monospace;
-      letter-spacing: .04em;
-      color: rgba(37, 36, 61, .7);
     }
 
     .news-card-list {
@@ -760,13 +763,6 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .news-card {
-        grid-template-columns: 1fr;
-      }
-
-      .news-card-image {
-        max-height: 220px;
-      }
     }
 
     @media (max-width: 680px) {
@@ -1373,14 +1369,14 @@
           </div>
 
           <div class="news-card">
+            <div class="news-card-head">
+              <h3>最新情報</h3>
+              <p class="news-card-date">2026年9月　ChatGPTとClaudeCodeで作成</p>
+            </div>
             <div class="news-card-image">
               <img src="assets/pool-note-preview.png" alt="ビリヤード配置図メーカーの画面プレビュー" loading="lazy" />
             </div>
             <div class="news-card-body">
-              <div class="news-card-head">
-                <h3>最新情報</h3>
-                <p class="news-card-date">2026年9月　ChatGPTとClaudeCodeで作成</p>
-              </div>
               <p><b>ビリヤード配置図メーカー</b>で、なにができる？</p>
               <ul class="news-card-list">
                 <li>ビリヤードの台と球の配置を視覚的に作成・管理できるツール</li>
