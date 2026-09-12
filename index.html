@@ -1076,7 +1076,14 @@
       }
     }
 
-  </style>
+  
+    .portfolio-pool { margin-top: 0; background: var(--mint); }
+    .app-features { margin: 12px 0; }
+    .app-features strong { font-weight: 800; }
+    .project-link-row { display: flex; align-items: center; gap: 16px; margin-top: 20px; }
+    .project-link-row b { margin-top: 0; padding-top: 0; }
+    .project-link-row .project-qr { width: 112px; height: 112px; flex: none; background: #fff; border: 1.5px solid var(--ink); border-radius: 12px; padding: 6px; }
+</style>
 </head>
 <body>
   <header class="site-header">
@@ -1180,13 +1187,44 @@
 
         <section class="work-category" data-work-panel="web">
           <div class="project-list">
+<div class="news-card portfolio-pool">
+            <div class="news-card-image">
+              <img src="assets/pool-note-preview.png" alt="ビリヤード配置図メーカーの画面プレビュー" loading="lazy" />
+            </div>
+            <div class="news-card-body">
+              <div class="news-card-head">
+                <h3>ビリヤード配置図メーカー</h3>
+                <p class="news-card-date">2026年9月　ChatGPTとClaudeCodeで作成</p>
+              </div>
+              <p><b>ビリヤード配置図メーカー</b>で、なにができる？</p>
+              <ul class="news-card-list">
+                <li>ビリヤードの台と球の配置を視覚的に作成・管理できるツール</li>
+                <li>マウスドラッグで球を自由に配置</li>
+                <li>複数の球の位置をまとめて保存・読み込み可能</li>
+                <li>ショット予測線を引いて、イメージトレーニングに活用</li>
+                <li>異なるビリヤード形式（9ボール、8ボール等）の配置に対応</li>
+                <li>画像として保存</li>
+                <li>キャッシュクリアするまで保持できる保存機能つき</li>
+              </ul>
+              <div class="news-card-link">
+                <a href="https://waraka2026.github.io/pool-note/">https://waraka2026.github.io/pool-note/</a>
+                <img class="news-card-qr" src="assets/pool-note-qr.svg" alt="ビリヤード配置図メーカーへのQRコード" width="84" height="84" />
+              </div>
+            </div>
+          </div>
             <a class="project-card brown" href="https://shiori-official.digitalhack-note.com/" target="_blank" rel="noopener">
               <div class="project-image"><img src="https://raw.githubusercontent.com/waraka2026/waraka2026.github.io/main/assets/shiori.svg" alt="読書管理アプリ 栞" /></div>
               <div class="project-info">
                 <span class="label">Webアプリ</span>
                 <h3>読書管理アプリ「栞」</h3>
                 <p>ClaudeCodeで開発した読書管理Webアプリ。Firebase / VS Code / GitHub などを使用し、GitHubアカウントまたはGoogleアカウントでログインして使えます。</p>
-                <b>サイトを見る ↗</b>
+                <div class="app-features"><p><strong>📚 ISBN自動登録：</strong>番号を入力するだけで書名・著者・表紙を自動取得。手入力の手間ゼロ。</p>
+<p><strong>🗂️ 読書ステータス管理：</strong>「読みたい・読書中・積読・読了」の4段階で本を整理。進捗バーで何%読んだか確認できます。</p>
+<p><strong>✏️ カスタマイズできるメモ：</strong>ページ番号・重要度タグつきでメモを記録。本の詳細画面でメモの並び替えやテキストのコピーも可能。メモの種類名は自分好みに変更できます。</p>
+<p><strong>📖 本棚ビュー：</strong>グリッド表示に切り替えると本の表紙が並んで本棚のように眺められます。</p>
+<p><strong>☁️ Googleアカウントで同期：</strong>サインインするだけでデータを自動同期。機種変更後もすべての記録が引き継げます。</p>
+<p><strong>🔍 検索・フィルター：</strong>タイトル・著者・タグで検索。ステータス絞り込みと並び替えで見たい本をすぐ見つけられます。</p></div>
+<div class="project-link-row"><img class="project-qr" src="assets/shiori-site-qr.svg" alt="栞アプリへのQRコード" width="112" height="112" /><b>サイトを見る ↗</b></div>
               </div>
             </a>
 
@@ -1196,7 +1234,7 @@
                 <span class="label">Webサイト</span>
                 <h3>ミッドナイト<br>ビリヤード本厚木店</h3>
                 <p>Wixを使用し、1からデザインと制作を担当。店内写真やメニューもCanvaを使用して作成しました。</p>
-                <b>サイトを見る ↗</b>
+                <div class="project-link-row"><img class="project-qr" src="assets/midnight-site-qr.svg" alt="ミッドナイトビリヤードへのQRコード" width="112" height="112" /><b>サイトを見る ↗</b></div>
               </div>
             </a>
           </div>
