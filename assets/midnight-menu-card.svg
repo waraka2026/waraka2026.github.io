@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="520" viewBox="0 0 720 520" role="img" aria-label="ミッドナイトビリヤード 料金・メニュープレビュー">
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12165d"/>
+      <stop offset="1" stop-color="#02042c"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="520" rx="34" fill="url(#night)"/>
+  <circle cx="52" cy="48" r="18" fill="#f5e348" stroke="#fff" stroke-width="3"/>
+  <circle cx="92" cy="62" r="18" fill="#5f6fa8" stroke="#fff" stroke-width="3"/>
+  <circle cx="635" cy="72" r="18" fill="#df2c31" stroke="#fff" stroke-width="3"/>
+  <text x="48" y="92" font-family="Georgia, serif" font-size="46" font-weight="700" fill="#fff">MID NIGHT</text>
+  <rect x="44" y="120" width="300" height="350" rx="18" fill="#192071" stroke="#98abe8" stroke-width="3"/>
+  <rect x="376" y="120" width="300" height="350" rx="18" fill="#18206d" stroke="#98abe8" stroke-width="3"/>
+  <rect x="68" y="150" width="252" height="46" rx="8" fill="#e6f2ff"/>
+  <text x="145" y="181" font-family="Noto Sans JP, Yu Gothic, sans-serif" font-size="25" font-weight="900" fill="#151a54">料金のご案内</text>
+  <g font-family="Noto Sans JP, Yu Gothic, sans-serif" font-size="20" font-weight="800" fill="#ffffff">
+    <text x="86" y="233">男性　ビジター</text><text x="266" y="233">650円</text>
+    <text x="86" y="273">男性　メンバー</text><text x="266" y="273">540円</text>
+    <text x="86" y="313">女性　ビジター</text><text x="266" y="313">540円</text>
+    <text x="86" y="353">女性　メンバー</text><text x="266" y="353">430円</text>
+    <text x="86" y="405">平日パック</text><text x="246" y="405">13:00-18:00</text>
+    <text x="86" y="443">トーナメントサービス</text>
+  </g>
+  <rect x="400" y="150" width="252" height="46" rx="8" fill="#243090" stroke="#98abe8"/>
+  <text x="438" y="181" font-family="Noto Sans JP, Yu Gothic, sans-serif" font-size="25" font-weight="900" fill="#ffffff">ドリンク＆フード</text>
+  <g font-family="Noto Sans JP, Yu Gothic, sans-serif" font-size="18" font-weight="800" fill="#ffffff">
+    <text x="410" y="225">生ビール</text><text x="588" y="225">550円</text>
+    <text x="410" y="255">レッドアイ</text><text x="588" y="255">600円</text>
+    <text x="410" y="285">レモンサワー</text><text x="588" y="285">450円</text>
+    <text x="410" y="315">烏龍茶</text><text x="588" y="315">300円</text>
+    <text x="410" y="358">ガーリックトースト</text><text x="588" y="358">320円</text>
+    <text x="410" y="388">カレーリゾット</text><text x="588" y="388">700円</text>
+    <text x="410" y="418">焼きそば</text><text x="588" y="418">600円</text>
+    <text x="410" y="448">パンケーキ</text><text x="588" y="448">550円</text>
+  </g>
+</svg>
