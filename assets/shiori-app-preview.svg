@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="520" viewBox="0 0 720 520" role="img" aria-label="読書管理アプリ 栞 画面プレビュー">
+  <rect width="720" height="520" rx="34" fill="#f4efe7"/>
+  <rect width="720" height="122" fill="#130d07"/>
+  <text x="38" y="62" font-family="Noto Sans JP, Yu Gothic, sans-serif" font-size="46" font-weight="900" fill="#c89416">栞</text>
+  <text x="38" y="96" font-family="Montserrat, Arial, sans-serif" font-size="16" letter-spacing="8" fill="#9c948d">SHIORI</text>
+  <rect x="542" y="36" width="132" height="48" rx="12" fill="none" stroke="#82786d" stroke-width="2"/>
+  <text x="577" y="67" font-family="Noto Sans JP, Yu Gothic, sans-serif" font-size="18" font-weight="700" fill="#d8d0c7">ログアウト</text>
+  <rect y="122" width="720" height="72" fill="#39210a"/>
+  <text x="35" y="168" font-family="Noto Sans JP, Yu Gothic, sans-serif" font-size="24" font-weight="900" fill="#d6a11b">📚 本棚 27</text>
+  <text x="270" y="168" font-family="Noto Sans JP, Yu Gothic, sans-serif" font-size="24" font-weight="900" fill="#ded6cc">📖 読み中 14</text>
+  <text x="505" y="168" font-family="Noto Sans JP, Yu Gothic, sans-serif" font-size="24" font-weight="900" fill="#ded6cc">🌙 読みたい 8</text>
+  <rect y="194" width="215" height="7" fill="#d09a16"/>
+  <rect x="30" y="226" width="180" height="58" rx="16" fill="#120c07"/>
+  <text x="58" y="264" font-family="Noto Sans JP, Yu Gothic, sans-serif" font-size="23" font-weight="900" fill="#fff">📚 本を登録</text>
+  <rect x="228" y="226" width="175" height="58" rx="16" fill="#9c3e31"/>
+  <text x="255" y="264" font-family="Noto Sans JP, Yu Gothic, sans-serif" font-size="23" font-weight="900" fill="#fff">📝 メモ追加</text>
+  <rect x="421" y="226" width="135" height="58" rx="16" fill="#24394e"/>
+  <text x="455" y="264" font-family="Noto Sans JP, Yu Gothic, sans-serif" font-size="23" font-weight="900" fill="#fff">🔍 検索</text>
+  <g font-family="Noto Sans JP, Yu Gothic, sans-serif" font-weight="800" fill="#201810">
+    <rect x="30" y="310" width="145" height="170" rx="14" fill="#fff" stroke="#e2d8c9"/>
+    <rect x="50" y="328" width="105" height="110" rx="4" fill="#111"/>
+    <path d="M74 410 L104 350 L135 410 Z" fill="#c89416" opacity="0.9"/>
+    <text x="47" y="463" font-size="18">街とその不確かな…</text>
+    <rect x="205" y="310" width="145" height="170" rx="14" fill="#fff" stroke="#e2d8c9"/>
+    <rect x="225" y="328" width="105" height="110" rx="4" fill="#f6f0e7"/>
+    <text x="250" y="388" font-size="34" fill="#222">カフカ</text>
+    <text x="222" y="463" font-size="18">海辺のカフカ</text>
+    <rect x="380" y="310" width="145" height="170" rx="14" fill="#fff" stroke="#e2d8c9"/>
+    <rect x="400" y="328" width="105" height="110" rx="4" fill="#b7dfd8"/>
+    <text x="415" y="390" font-size="22" fill="#784248">倫理とは</text>
+    <text x="397" y="463" font-size="18">倫理とは何か</text>
+    <rect x="555" y="310" width="135" height="170" rx="14" fill="#fff" stroke="#e2d8c9"/>
+    <rect x="575" y="328" width="95" height="110" rx="4" fill="#d7d0e8"/>
+    <text x="572" y="463" font-size="18">学生との対話</text>
+  </g>
+</svg>
