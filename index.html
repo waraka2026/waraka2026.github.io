@@ -32,9 +32,26 @@
             .replace(oldShioriImage,newShioriImage)
             .replace(oldMidnightImage,newMidnightImage)
             .replace('</style>',extraCss+'</style>');
+
+          var jumpToContact = location.hash === '#contact';
+          if (jumpToContact) {
+            html=html
+              .replace('<button class="active" type="button" data-page="about">','<button type="button" data-page="about">')
+              .replace('<button type="button" data-page="contact">','<button class="active" type="button" data-page="contact">')
+              .replace('<article class="page active" data-page-panel="about">','<article class="page" data-page-panel="about">')
+              .replace('<article class="page" data-page-panel="contact">','<article class="page active" id="contact" data-page-panel="contact">');
+          }
+
           document.open();
           document.write(html);
           document.close();
+
+          if (jumpToContact) {
+            setTimeout(function(){
+              var target=document.getElementById('contact');
+              if(target) target.scrollIntoView({block:'start'});
+            },0);
+          }
         })
         .catch(function(){
           location.href='index-original.html';
