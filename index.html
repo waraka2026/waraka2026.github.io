@@ -13,24 +13,99 @@
   <p>Loading portfolio...</p>
   <script>
     (function(){
-      var version='20260913-visuals-contain-v4';
+      var version='20261003-9board-v1';
       fetch('index-original.html?v='+version,{cache:'no-store'})
         .then(function(response){return response.text();})
         .then(function(html){
           var oldIntro='<p>ClaudeCodeで開発した読書管理Webアプリ。Firebase / VS Code / GitHub などを使用し、GitHubアカウントまたはGoogleアカウントでログインして使えます。</p>';
           var newIntro='<p><strong>読書管理Webアプリ。</strong>ClaudeCodeでAIと一緒に1から開発。Firebase / VS Code / GitHubを使用し、GitHub・Googleログインに対応しています。</p>';
-          var oldFeatures='<div class="app-features"><p><strong>📚 ISBN自動登録：</strong>番号を入力するだけで書名・著者・表紙を自動取得。手入力の手間ゼロ。</p>\n<p><strong>🗂️ 読書ステータス管理：</strong>「読みたい・読書中・積読・読了」の4段階で本を整理。進捗バーで何%読んだか確認できます。</p>\n<p><strong>✏️ カスタマイズできるメモ：</strong>ページ番号・重要度タグつきでメモを記録。本の詳細画面でメモの並び替えやテキストのコピーも可能。メモの種類名は自分好みに変更できます。</p>\n<p><strong>📖 本棚ビュー：</strong>グリッド表示に切り替えると本の表紙が並んで本棚のように眺められます。</p>\n<p><strong>☁️ Googleアカウントで同期：</strong>サインインするだけでデータを自動同期。機種変更後もすべての記録が引き継げます。</p>\n<p><strong>🔍 検索・フィルター：</strong>タイトル・著者・タグで検索。ステータス絞り込みと並び替えで見たい本をすぐ見つけられます。</p></div>';
-          var newFeatures='<div class="app-features"><p><strong>📚 ISBN：</strong>番号入力で書名・著者・表紙を自動取得。</p>\n<p><strong>🗂️ ステータス：</strong>読みたい／読書中／積読／読了を整理し、進捗％も確認。</p>\n<p><strong>✏️ メモ：</strong>ページ番号・重要度タグつきで記録。並び替え、コピー、種類名変更も可能。</p>\n<p><strong>📖 本棚ビュー：</strong>表紙を並べて本棚のように一覧表示。</p>\n<p><strong>☁️ 同期：</strong>ログインで記録を自動同期。機種変更後も引き継ぎ。</p>\n<p><strong>🔍 検索：</strong>タイトル・著者・タグ検索、絞り込み・並び替えに対応。</p></div>';
+          var oldFeatures='<div class="app-features"><p><strong>📚 ISBN自動登録：</strong>番号を入力するだけで書名・著者・表紙を自動取得。手入力の手間ゼロ。</p>\
+<p><strong>🗂️ 読書ステータス管理：</strong>「読みたい・読書中・積読・読了」の4段階で本を整理。進捗バーで何%読んだか確認できます。</p>\
+<p><strong>✏️ カスタマイズできるメモ：</strong>ページ番号・重要度タグつきでメモを記録。本の詳細画面でメモの並び替えやテキストのコピーも可能。メモの種類名は自分好みに変更できます。</p>\
+<p><strong>📖 本棚ビュー：</strong>グリッド表示に切り替えると本の表紙が並んで本棚のように眺められます。</p>\
+<p><strong>☁️ Googleアカウントで同期：</strong>サインインするだけでデータを自動同期。機種変更後もすべての記録が引き継げます。</p>\
+<p><strong>🔍 検索・フィルター：</strong>タイトル・著者・タグで検索。ステータス絞り込みと並び替えで見たい本をすぐ見つけられます。</p></div>';
+          var newFeatures='<div class="app-features"><p><strong>📚 ISBN：</strong>番号入力で書名・著者・表紙を自動取得。</p>\
+<p><strong>🗂️ ステータス：</strong>読みたい／読書中／積読／読了を整理し、進捗％も確認。</p>\
+<p><strong>✏️ メモ：</strong>ページ番号・重要度タグつきで記録。並び替え、コピー、種類名変更も可能。</p>\
+<p><strong>📖 本棚ビュー：</strong>表紙を並べて本棚のように一覧表示。</p>\
+<p><strong>☁️ 同期：</strong>ログインで記録を自動同期。機種変更後も引き継ぎ。</p>\
+<p><strong>🔍 検索：</strong>タイトル・著者・タグ検索、絞り込み・並び替えに対応。</p></div>';
           var oldShioriImage='<div class="project-image"><img src="https://raw.githubusercontent.com/waraka2026/waraka2026.github.io/main/assets/shiori.svg" alt="読書管理アプリ 栞" /></div>';
           var newShioriImage='<div class="project-image project-image-duo shiori-visuals"><img class="project-screen shiori-logo-card" src="assets/shiori-logo-card.svg" alt="読書管理アプリ「栞」のロゴ画像" loading="lazy" /><img class="project-screen shiori-screen" src="assets/shiori-app-preview.svg" alt="読書管理アプリ「栞」の画面" loading="lazy" /></div>';
           var oldMidnightImage='<div class="project-image"><img src="https://raw.githubusercontent.com/waraka2026/waraka2026.github.io/main/assets/midnight.svg" alt="ミッドナイトビリヤード" /></div>';
           var newMidnightImage='<div class="project-image project-image-duo midnight-visuals"><img class="project-screen midnight-logo" src="assets/midnight.svg" alt="ミッドナイトビリヤード" loading="lazy" /><img class="project-screen midnight-screen" src="assets/midnight-menu-card.svg" alt="ミッドナイトビリヤード 料金・メニュー画像" loading="lazy" /></div>';
-          var extraCss='\n    /* compact Shiori description */\n    .project-card.brown .project-info{justify-content:center;}\n    .project-card.brown .project-info .label{margin-bottom:10px;}\n    .project-card.brown .project-info h3{margin-bottom:8px;}\n    .project-card.brown .project-info>p{margin-bottom:7px;font-size:12.5px;line-height:1.5;}\n    .project-card.brown .app-features{margin:4px 0 8px;}\n    .project-card.brown .app-features p{margin-bottom:4px;font-size:11.5px;line-height:1.38;}\n    .project-card.brown .project-link-row{margin-top:10px;}\n\n    /* Shiori / Midnight image layout */\n    .project-card.brown,\n    .project-card.midnight-blue{grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);}\n    .project-card.brown .project-image,\n    .project-card.midnight-blue .project-image{background:transparent!important;border:0!important;box-shadow:none!important;padding:0;overflow:visible;min-height:270px;width:100%;}\n    .project-card.brown .project-image-duo,\n    .project-card.midnight-blue .project-image-duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;justify-items:stretch;gap:12px;}\n    .project-card.brown .project-image-duo img,\n    .project-card.midnight-blue .project-image-duo img{width:100%!important;height:100%!important;min-height:270px;max-height:320px;object-fit:contain!important;object-position:center center;padding:0!important;border:1.5px solid rgba(37,36,61,.75);border-radius:24px;box-shadow:5px 5px 0 rgba(37,36,61,.16);background:#fff;overflow:hidden;}\n    .project-card.brown .shiori-logo-card{background:#2b1a07;}\n    .project-card.brown .shiori-screen{background:#f4eee5;}\n    .project-card.midnight-blue .midnight-logo{background:#eef4ff;}\n    .project-card.midnight-blue .midnight-screen{background:#101458;}\n    @media (max-width:900px){\n      .project-card.brown,\n      .project-card.midnight-blue{grid-template-columns:1fr;}\n      .project-card.brown .project-image,\n      .project-card.midnight-blue .project-image{min-height:240px;}\n      .project-card.brown .project-image-duo img,\n      .project-card.midnight-blue .project-image-duo img{min-height:240px;max-height:280px;}\n    }\n    @media (max-width:680px){\n      .project-card.brown .project-image,\n      .project-card.midnight-blue .project-image{min-height:205px;}\n      .project-card.brown .project-image-duo,\n      .project-card.midnight-blue .project-image-duo{gap:8px;}\n      .project-card.brown .project-image-duo img,\n      .project-card.midnight-blue .project-image-duo img{min-height:205px;max-height:230px;border-radius:18px;}\n    }\n';
+          var oldPoolImage='<img src="assets/pool-note-preview.png" alt="ビリヤード配置図メーカーの画面プレビュー" loading="lazy" />';
+          var newPoolImage='<img src="assets/9board-screen.webp" alt="9boardの画面プレビュー" loading="lazy" />';
+          var oldPoolTitle='<h3>ビリヤード配置図メーカー</h3>';
+          var newPoolTitle='<h3>9board</h3>';
+          var oldPoolLead='<p><b>ビリヤード配置図メーカー</b>で、なにができる？</p>';
+          var newPoolLead='<p><b>9board</b>で、なにができる？</p>';
+          var oldPoolQr='<img class="news-card-qr" src="assets/pool-note-qr.svg" alt="ビリヤード配置図メーカーへのQRコード" width="84" height="84" />';
+          var newPoolQr='<div class="nineboard-qr-group"><img class="news-card-qr" src="assets/pool-note-qr.svg" alt="9boardへのQRコード" width="84" height="84" /><a class="nineboard-line-link" href="https://lin.ee/YVTe3bi" target="_blank" rel="noopener" aria-label="9Board公式LINEを友だち追加"><img class="nineboard-line-qr" src="assets/9board-line-qr.webp" alt="9Board公式LINE 友だち追加QRコード" loading="lazy" /></a></div>';
+          var extraCss='\
+    /* compact Shiori description */\
+    .project-card.brown .project-info{justify-content:center;}\
+    .project-card.brown .project-info .label{margin-bottom:10px;}\
+    .project-card.brown .project-info h3{margin-bottom:8px;}\
+    .project-card.brown .project-info>p{margin-bottom:7px;font-size:12.5px;line-height:1.5;}\
+    .project-card.brown .app-features{margin:4px 0 8px;}\
+    .project-card.brown .app-features p{margin-bottom:4px;font-size:11.5px;line-height:1.38;}\
+    .project-card.brown .project-link-row{margin-top:10px;}\
+\
+    /* Shiori / Midnight image layout */\
+    .project-card.brown,\
+    .project-card.midnight-blue{grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);}\
+    .project-card.brown .project-image,\
+    .project-card.midnight-blue .project-image{background:transparent!important;border:0!important;box-shadow:none!important;padding:0;overflow:visible;min-height:270px;width:100%;}\
+    .project-card.brown .project-image-duo,\
+    .project-card.midnight-blue .project-image-duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;justify-items:stretch;gap:12px;}\
+    .project-card.brown .project-image-duo img,\
+    .project-card.midnight-blue .project-image-duo img{width:100%!important;height:100%!important;min-height:270px;max-height:320px;object-fit:contain!important;object-position:center center;padding:0!important;border:1.5px solid rgba(37,36,61,.75);border-radius:24px;box-shadow:5px 5px 0 rgba(37,36,61,.16);background:#fff;overflow:hidden;}\
+    .project-card.brown .shiori-logo-card{background:#2b1a07;}\
+    .project-card.brown .shiori-screen{background:#f4eee5;}\
+    .project-card.midnight-blue .midnight-logo{background:#eef4ff;}\
+    .project-card.midnight-blue .midnight-screen{background:#101458;}\
+    @media (max-width:900px){\
+      .project-card.brown,\
+      .project-card.midnight-blue{grid-template-columns:1fr;}\
+      .project-card.brown .project-image,\
+      .project-card.midnight-blue .project-image{min-height:240px;}\
+      .project-card.brown .project-image-duo img,\
+      .project-card.midnight-blue .project-image-duo img{min-height:240px;max-height:280px;}\
+    }\
+    @media (max-width:680px){\
+      .project-card.brown .project-image,\
+      .project-card.midnight-blue .project-image{min-height:205px;}\
+      .project-card.brown .project-image-duo,\
+      .project-card.midnight-blue .project-image-duo{gap:8px;}\
+      .project-card.brown .project-image-duo img,\
+      .project-card.midnight-blue .project-image-duo img{min-height:205px;max-height:230px;border-radius:18px;}\
+    }\
+\
+    /* 9board portfolio card */\
+    .portfolio-pool{background:var(--mint)!important;}\
+    .portfolio-pool .news-card-image{aspect-ratio:1204/764;background:rgba(255,255,255,.72);}\
+    .portfolio-pool .news-card-image img{padding:0;object-fit:contain;}\
+    .portfolio-pool .news-card-link{align-items:flex-end;}\
+    .portfolio-pool .nineboard-qr-group{display:flex;align-items:flex-end;gap:10px;flex:none;}\
+    .portfolio-pool .nineboard-line-link{display:block;width:118px;flex:none;}\
+    .portfolio-pool .nineboard-line-qr{display:block;width:100%;height:auto;border:1.5px solid var(--ink);border-radius:12px;background:#fff;}\
+    @media (max-width:680px){\
+      .portfolio-pool .news-card-link{align-items:flex-start;}\
+      .portfolio-pool .nineboard-qr-group{width:100%;justify-content:flex-end;}\
+      .portfolio-pool .nineboard-line-link{width:108px;}\
+    }\
+';
           html=html
             .replace(oldIntro,newIntro)
             .replace(oldFeatures,newFeatures)
             .replace(oldShioriImage,newShioriImage)
             .replace(oldMidnightImage,newMidnightImage)
+            .replace(oldPoolImage,newPoolImage)
+            .replace(oldPoolTitle,newPoolTitle)
+            .replace(oldPoolLead,newPoolLead)
+            .replace(oldPoolQr,newPoolQr)
             .replace('</style>',extraCss+'</style>');
 
           var jumpToContact = location.hash === '#contact';
