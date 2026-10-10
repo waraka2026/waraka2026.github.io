@@ -1086,6 +1086,31 @@
     .about-nineboard-news .news-card-image { aspect-ratio: 1564 / 903; max-height: none; }
     .about-nineboard-line { display: block; margin-top: 18px; }
     .about-nineboard-line img { display: block; width: 100%; height: auto; }
+
+    /* 9board portfolio card: screenshot on the left, logo > QR > copy on the right */
+    .portfolio-pool { grid-template-columns: minmax(220px, .8fr) 1.2fr; grid-template-rows: auto 1fr; grid-template-areas: "shot logo" "shot body"; align-items: start; gap: 16px 28px; }
+    .portfolio-pool .nineboard-shot { grid-area: shot; aspect-ratio: 720 / 1082; max-height: none; }
+    .portfolio-pool .nineboard-shot img { object-fit: cover; object-position: center top; }
+    .portfolio-pool .nineboard-logo { grid-area: logo; margin: 0; border: 1.5px solid var(--ink); border-radius: 22px; background: #fff; overflow: hidden; font-size: 0; line-height: 0; }
+    .portfolio-pool .nineboard-logo img { display: block; width: 100%; height: auto; }
+    .portfolio-pool .news-card-body { grid-area: body; align-self: stretch; }
+    .portfolio-pool .nineboard-qr-group { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .portfolio-pool .nineboard-qr-group a { display: block; border: 1.5px solid var(--ink); border-radius: 18px; background: #fff; overflow: hidden; transition: transform .2s ease, box-shadow .2s ease; }
+    .portfolio-pool .nineboard-qr-group a:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--ink); }
+    .portfolio-pool .nineboard-qr-group img { display: block; width: 100%; height: auto; }
+    .portfolio-pool .nineboard-copy { margin: 18px 0; font-size: clamp(14px, 1.5vw, 16px); font-weight: 700; line-height: 1.75; }
+    .portfolio-pool .news-card-link { flex-wrap: wrap; }
+    @media (max-width: 900px) {
+      .portfolio-pool { grid-template-columns: 1fr; grid-template-rows: none; grid-template-areas: "logo" "shot" "body"; gap: 16px; }
+      .portfolio-pool .nineboard-shot { width: min(100%, 320px); justify-self: center; }
+    }
+    @media (max-width: 680px) {
+      .portfolio-pool .nineboard-shot { width: min(78%, 300px); }
+      .portfolio-pool .nineboard-logo { border-radius: 16px; }
+      .portfolio-pool .nineboard-qr-group { gap: 10px; }
+      .portfolio-pool .nineboard-qr-group a { border-radius: 14px; }
+      .portfolio-pool .nineboard-copy { margin: 14px 0; font-size: 13.5px; }
+    }
 </style>
 </head>
 <body>
@@ -1191,27 +1216,19 @@
         <section class="work-category" data-work-panel="web">
           <div class="project-list">
 <div class="news-card portfolio-pool">
-            <div class="news-card-image">
-              <img src="assets/pool-note-preview.png" alt="ビリヤード配置図メーカーの画面プレビュー" loading="lazy" />
+            <div class="news-card-image nineboard-shot">
+              <img src="assets/9board-screen.webp" alt="9boardの配置図画面（スマホ版）" width="720" height="1082" loading="lazy" />
             </div>
+            <h3 class="nineboard-logo"><img src="assets/9board-logo.webp" alt="9board" width="1200" height="295" loading="lazy" /></h3>
             <div class="news-card-body">
-              <div class="news-card-head">
-                <h3>ビリヤード配置図メーカー</h3>
-                <p class="news-card-date">2026年9月　ChatGPTとClaudeCodeで作成</p>
+              <div class="nineboard-qr-group">
+                <a href="https://9board.jp/" target="_blank" rel="noopener" aria-label="9board公式サイトを開く"><img src="assets/9board-site-qr.webp" alt="9board公式サイトのQRコード https://9board.jp/" width="800" height="800" loading="lazy" /></a>
+                <a href="https://lin.ee/YVTe3bi" target="_blank" rel="noopener" aria-label="9board公式LINEを友だち追加"><img src="assets/9board-line-qr.webp" alt="9board公式LINE 友だち追加のQRコード" width="800" height="800" loading="lazy" /></a>
               </div>
-              <p><b>ビリヤード配置図メーカー</b>で、なにができる？</p>
-              <ul class="news-card-list">
-                <li>ビリヤードの台と球の配置を視覚的に作成・管理できるツール</li>
-                <li>マウスドラッグで球を自由に配置</li>
-                <li>複数の球の位置をまとめて保存・読み込み可能</li>
-                <li>ショット予測線を引いて、イメージトレーニングに活用</li>
-                <li>異なるビリヤード形式（9ボール、8ボール等）の配置に対応</li>
-                <li>画像として保存</li>
-                <li>キャッシュクリアするまで保持できる保存機能つき</li>
-              </ul>
+              <p class="nineboard-copy">配置図・スコア・対戦記録をスマホで。<br />練習も試合も支えるビリヤードツール。</p>
               <div class="news-card-link">
-                <a href="https://waraka2026.github.io/pool-note/">https://waraka2026.github.io/pool-note/</a>
-                <img class="news-card-qr" src="assets/pool-note-qr.svg" alt="ビリヤード配置図メーカーへのQRコード" width="84" height="84" />
+                <a href="https://9board.jp/" target="_blank" rel="noopener">https://9board.jp/</a>
+                <p class="news-card-date">2026年9月　ChatGPTとClaudeCodeで作成</p>
               </div>
             </div>
           </div>
