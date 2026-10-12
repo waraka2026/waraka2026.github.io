@@ -1087,7 +1087,7 @@
     .nineboard-card { grid-template-columns: minmax(200px, 300px) minmax(0, 1fr); grid-template-rows: auto 1fr; grid-template-areas: "shot logo" "shot body"; align-items: start; gap: 16px 28px; }
     .nineboard-card .nineboard-shot { grid-area: shot; aspect-ratio: 720 / 1082; max-height: none; }
     .nineboard-card .nineboard-shot img { object-fit: cover; object-position: center top; }
-    .nineboard-card .nineboard-logo { grid-area: logo; margin: 0; border: 1.5px solid var(--ink); border-radius: 22px; background: #fff; overflow: hidden; font-size: 0; line-height: 0; }
+    .nineboard-card .nineboard-logo { grid-area: logo; margin: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; overflow: visible; font-size: 0; line-height: 0; }
     .nineboard-card .nineboard-logo img { display: block; width: 100%; height: auto; }
     .nineboard-card .news-card-body { grid-area: body; align-self: stretch; }
     .nineboard-card .nineboard-qr-group { display: grid; grid-template-columns: repeat(2, minmax(0, 150px)); gap: 14px; }
@@ -1107,7 +1107,6 @@
     }
     @media (max-width: 680px) {
       .nineboard-card .nineboard-shot { width: min(78%, 300px); }
-      .nineboard-card .nineboard-logo { border-radius: 16px; }
       .nineboard-card .nineboard-qr-group { grid-template-columns: repeat(2, minmax(0, 120px)); gap: 10px; }
       .nineboard-card .nineboard-qr-group a { border-radius: 12px; }
       .nineboard-card .nineboard-copy { margin: 14px 0; font-size: 13.5px; }
@@ -1220,7 +1219,7 @@
             <div class="news-card-image nineboard-shot">
               <img src="assets/9board-screen.webp" alt="9boardの配置図画面（スマホ版）" width="720" height="1082" loading="lazy" />
             </div>
-            <h3 class="nineboard-logo"><img src="assets/9board-logo.webp" alt="9board" width="1200" height="295" loading="lazy" /></h3>
+            <h3 class="nineboard-logo"><img src="assets/9board-logo.webp?v=20261012" alt="9board" width="1200" height="295" loading="lazy" /></h3>
             <div class="news-card-body">
               <div class="nineboard-qr-group">
                 <a href="https://9board.jp/" target="_blank" rel="noopener" aria-label="9board公式サイトを開く"><img src="assets/9board-site-qr.webp" alt="9board公式サイトのQRコード https://9board.jp/" width="800" height="800" loading="lazy" /></a>
@@ -1455,7 +1454,7 @@
               <h3>最新情報</h3>
               <p class="news-card-date">2026年9月　ChatGPTとClaudeCodeで作成</p>
             </div>
-            <p class="nineboard-logo"><img src="assets/9board-logo.webp" alt="9board" width="1200" height="295" loading="lazy" /></p>
+            <p class="nineboard-logo"><img src="assets/9board-logo.webp?v=20261012" alt="9board" width="1200" height="295" loading="lazy" /></p>
             <div class="news-card-body">
               <div class="nineboard-qr-group">
                 <a href="https://9board.jp/" target="_blank" rel="noopener" aria-label="9board公式サイトを開く"><img src="assets/9board-site-qr.webp" alt="9board公式サイトのQRコード https://9board.jp/" width="800" height="800" loading="lazy" /></a>
