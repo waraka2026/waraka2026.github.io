@@ -1115,6 +1115,10 @@
     .hero-line-qr:hover { transform: translateY(-2px); }
     .hero-line-qr img { display: block; width: 160px; height: 160px; }
     @media (max-width: 680px) { .hero-line-qr img { width: 130px; height: 130px; } }
+    .contact-line .contact-line-qr { display: block; width: 280px; max-width: 100%; margin: 0 auto; line-height: 0; }
+    .contact-line .contact-line-qr:hover { text-decoration: none; opacity: .85; }
+    .contact-line .contact-line-qr img { display: block; width: 100%; height: auto; }
+    @media (max-width: 680px) { .contact-line .contact-line-qr { width: 220px; } }
 </style>
 </head>
 <body>
@@ -1481,9 +1485,11 @@
         </div>
 
         <div class="contact-body">
-          <div class="contact-card">
-            <span>MAIL</span>
-            <a href="mailto:7jkha.5nt@gmail.com">7jkha.5nt@gmail.com</a>
+          <div class="contact-card contact-line">
+            <span>LINE</span>
+            <a class="contact-line-qr" href="https://lin.ee/W9BRLwf" target="_blank" rel="noopener">
+              <img src="assets/waraka-line-qr.png" alt="笑加 -waraka- 公式LINE 友だち追加QRコード" width="280" height="280" />
+            </a>
           </div>
           <div class="contact-card">
             <span>ビリヤード専用垢</span>
