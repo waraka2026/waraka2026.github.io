@@ -1088,13 +1088,13 @@
     .nineboard-card .nineboard-shot { grid-area: shot; aspect-ratio: 720 / 1082; max-height: none; }
     .nineboard-card .nineboard-shot img { object-fit: cover; object-position: center top; }
     .nineboard-card .nineboard-logo { grid-area: logo; margin: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; overflow: visible; font-size: 0; line-height: 0; }
-    .nineboard-card .nineboard-logo img { display: block; width: 100%; height: auto; }
+    .nineboard-card .nineboard-logo img { display: block; width: 78%; max-width: 420px; height: auto; margin: 0 auto; }
     .nineboard-card .news-card-body { grid-area: body; align-self: stretch; }
-    .nineboard-card .nineboard-qr-group { display: grid; grid-template-columns: repeat(2, minmax(0, 150px)); gap: 14px; }
+    .nineboard-card .nineboard-qr-group { display: grid; grid-template-columns: repeat(2, minmax(0, 150px)); gap: 14px; justify-content: center; }
     .nineboard-card .nineboard-qr-group a { display: block; border: 1.5px solid var(--ink); border-radius: 14px; background: #fff; overflow: hidden; transition: transform .2s ease, box-shadow .2s ease; }
     .nineboard-card .nineboard-qr-group a:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--ink); }
     .nineboard-card .nineboard-qr-group img { display: block; width: 100%; height: auto; }
-    .nineboard-card .nineboard-copy { margin: 18px 0; font-size: clamp(14px, 1.5vw, 16px); font-weight: 700; line-height: 1.75; }
+    .nineboard-card .nineboard-copy { margin: 18px 0; font-size: clamp(14px, 1.5vw, 16px); font-weight: 700; line-height: 1.75; text-align: center; }
     .nineboard-card .news-card-link { flex-wrap: wrap; }
     .about-nineboard-news { grid-template-rows: auto auto 1fr; grid-template-areas: "shot head" "shot logo" "shot body"; }
     .about-nineboard-news .news-card-head { grid-area: head; margin-bottom: 0; }
