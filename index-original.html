@@ -1119,6 +1119,11 @@
     .about-text .skill-strip { gap: 6px; margin-top: 4px; }
     .about-text .skill-strip span { padding: 6px 9px; font-size: 9.5px; }
     .hero-line-qr { display: block; width: fit-content; margin: 0 auto; line-height: 0; border: 1.5px solid #25243d; border-radius: 16px; overflow: hidden; background: #fff; box-shadow: 4px 4px 0 rgba(37,36,61,.18); transition: transform .2s ease; }
+    @media (min-width: 681px) {
+      .about-side { align-items: center; }
+      .about-side .hero-line-qr { flex: 1 1 auto; height: 0; min-height: 160px; aspect-ratio: 1 / 1; width: auto; max-width: 100%; }
+      .about-side .hero-line-qr img { width: 100%; height: 100%; }
+    }
     .hero-line-qr:hover { transform: translateY(-2px); }
     .hero-line-qr img { display: block; width: 160px; height: 160px; }
     @media (max-width: 680px) { .hero-line-qr img { width: 130px; height: 130px; } }
