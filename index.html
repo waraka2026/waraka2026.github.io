@@ -32,9 +32,9 @@
 <p><strong>☁️ 同期：</strong>ログインで記録を自動同期。機種変更後も引き継ぎ。</p>\
 <p><strong>🔍 検索：</strong>タイトル・著者・タグ検索、絞り込み・並び替えに対応。</p></div>';
           var oldShioriImage='<div class="project-image"><img src="https://raw.githubusercontent.com/waraka2026/waraka2026.github.io/main/assets/shiori.svg" alt="読書管理アプリ 栞" /></div>';
-          var newShioriImage='<div class="project-image project-image-duo shiori-visuals"><img class="project-screen shiori-logo-card" src="assets/shiori-logo-card.svg" alt="読書管理アプリ「栞」のロゴ画像" loading="lazy" /><img class="project-screen shiori-screen" src="assets/shiori-app-preview.svg" alt="読書管理アプリ「栞」の画面" loading="lazy" /></div>';
+          var newShioriImage='<div class="project-image project-image-original"><img class="project-original" src="assets/shiori.svg" alt="読書管理アプリ「栞」の画面" width="735" height="545" loading="lazy" /></div>';
           var oldMidnightImage='<div class="project-image"><img src="https://raw.githubusercontent.com/waraka2026/waraka2026.github.io/main/assets/midnight.svg" alt="ミッドナイトビリヤード" /></div>';
-          var newMidnightImage='<div class="project-image project-image-duo midnight-visuals"><img class="project-screen midnight-logo" src="assets/midnight.svg" alt="ミッドナイトビリヤード" loading="lazy" /><img class="project-screen midnight-screen" src="assets/midnight-menu-card.svg" alt="ミッドナイトビリヤード 料金・メニュー画像" loading="lazy" /></div>';
+          var newMidnightImage='<div class="project-image project-image-original"><img class="project-original" src="assets/midnight.svg" alt="ミッドナイトビリヤード本厚木店のWebサイト" width="700" height="475" loading="lazy" /></div>';
           var extraCss='\
     /* compact Shiori description */\
     .project-card.brown .project-info{justify-content:center;}\
@@ -45,34 +45,18 @@
     .project-card.brown .app-features p{margin-bottom:4px;font-size:11.5px;line-height:1.38;}\
     .project-card.brown .project-link-row{margin-top:10px;}\
 \
-    /* Shiori / Midnight image layout */\
+    /* Shiori / Midnight image layout: original screenshots, never upscaled */\
     .project-card.brown,\
     .project-card.midnight-blue{grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);}\
     .project-card.brown .project-image,\
-    .project-card.midnight-blue .project-image{background:transparent!important;border:0!important;box-shadow:none!important;padding:0;overflow:visible;min-height:270px;width:100%;}\
-    .project-card.brown .project-image-duo,\
-    .project-card.midnight-blue .project-image-duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;justify-items:stretch;gap:12px;}\
-    .project-card.brown .project-image-duo img,\
-    .project-card.midnight-blue .project-image-duo img{width:100%!important;height:100%!important;min-height:270px;max-height:320px;object-fit:contain!important;object-position:center center;padding:0!important;border:1.5px solid rgba(37,36,61,.75);border-radius:24px;box-shadow:5px 5px 0 rgba(37,36,61,.16);background:#fff;overflow:hidden;}\
-    .project-card.brown .shiori-logo-card{background:#2b1a07;}\
-    .project-card.brown .shiori-screen{background:#f4eee5;}\
-    .project-card.midnight-blue .midnight-logo{background:#eef4ff;}\
-    .project-card.midnight-blue .midnight-screen{background:#101458;}\
+    .project-card.midnight-blue .project-image{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;overflow:visible;min-height:0!important;height:auto!important;width:100%;display:flex;align-items:center;justify-content:center;}\
+    .project-card.brown .project-image img.project-original,\
+    .project-card.midnight-blue .project-image img.project-original{width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;object-fit:contain!important;padding:0!important;border:1.5px solid rgba(37,36,61,.75);border-radius:18px;box-shadow:5px 5px 0 rgba(37,36,61,.16);background:#fff;transform:none!important;}\
+    .project-card.brown .project-image img.project-original{max-width:735px;}\
+    .project-card.midnight-blue .project-image img.project-original{max-width:700px;}\
     @media (max-width:900px){\
       .project-card.brown,\
       .project-card.midnight-blue{grid-template-columns:1fr;}\
-      .project-card.brown .project-image,\
-      .project-card.midnight-blue .project-image{min-height:240px;}\
-      .project-card.brown .project-image-duo img,\
-      .project-card.midnight-blue .project-image-duo img{min-height:240px;max-height:280px;}\
-    }\
-    @media (max-width:680px){\
-      .project-card.brown .project-image,\
-      .project-card.midnight-blue .project-image{min-height:205px;}\
-      .project-card.brown .project-image-duo,\
-      .project-card.midnight-blue .project-image-duo{gap:8px;}\
-      .project-card.brown .project-image-duo img,\
-      .project-card.midnight-blue .project-image-duo img{min-height:205px;max-height:230px;border-radius:18px;}\
     }\
 \
 ';
