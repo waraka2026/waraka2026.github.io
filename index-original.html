@@ -1554,8 +1554,46 @@
     }
 
     workButtons.forEach(button => {
-      button.addEventListener('click', () => showWork(button.dataset.work));
+      button.addEventListener('click', () => {
+        showWork(button.dataset.work);
+        setHash('works-' + button.dataset.work);
+      });
     });
+
+    /* anchor links: #about / #works / #photo / #contact / #works-youtube etc. */
+    const pageNames = Array.from(pages).map(page => page.dataset.pagePanel);
+    const workNames = Array.from(workPanels).map(panel => panel.dataset.workPanel);
+
+    function setHash(name) {
+      if (location.hash !== '#' + name) history.replaceState(null, '', '#' + name);
+    }
+
+    function openFromHash(shouldScroll) {
+      const name = decodeURIComponent(location.hash.replace('#', ''));
+      if (!name || name === 'top') return;
+      if (pageNames.includes(name)) {
+        showPage(name, shouldScroll);
+      } else if (name.startsWith('works-') && workNames.includes(name.slice(6))) {
+        showWork(name.slice(6));
+        showPage('works', shouldScroll);
+      }
+    }
+
+    pageButtons.forEach(button => {
+      button.addEventListener('click', () => setHash(button.dataset.page));
+    });
+    document.querySelectorAll('[data-page-jump]').forEach(button => {
+      button.addEventListener('click', () => setHash(button.dataset.pageJump));
+    });
+
+    window.addEventListener('hashchange', () => openFromHash(true));
+    if (location.hash) {
+      openFromHash(false);
+      setTimeout(() => {
+        const menuTop = menu.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({ top: menuTop - 82 });
+      }, 60);
+    }
   </script>
 </body>
 </html>
