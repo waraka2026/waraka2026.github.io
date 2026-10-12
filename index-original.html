@@ -1114,6 +1114,10 @@
     .about-grid { align-items: stretch; }
     .about-grid .about-text { display: flex; flex-direction: column; justify-content: center; }
     .about-side { display: flex; flex-direction: column; justify-content: space-between; align-self: stretch; gap: 22px; }
+    [data-page-panel="about"] .page-head { padding-top: 24px; }
+    .about-side { justify-content: center !important; }
+    .about-text .skill-strip { gap: 6px; margin-top: 4px; }
+    .about-text .skill-strip span { padding: 6px 9px; font-size: 9.5px; }
     .hero-line-qr { display: block; width: fit-content; margin: 0 auto; line-height: 0; border: 1.5px solid #25243d; border-radius: 16px; overflow: hidden; background: #fff; box-shadow: 4px 4px 0 rgba(37,36,61,.18); transition: transform .2s ease; }
     .hero-line-qr:hover { transform: translateY(-2px); }
     .hero-line-qr img { display: block; width: 160px; height: 160px; }
@@ -1429,7 +1433,6 @@
 
       <article class="page active" data-page-panel="about">
         <div class="page-head">
-          <p class="section-kicker">03 / わたしについて</p>
           <h2>笑加 -waraka-</h2>
           <p>AI、Web、写真、動画、ビリヤードまわりの制作など、興味のあることを横断して活動しています。</p>
         </div>
@@ -1440,16 +1443,16 @@
               <a class="hero-line-qr" href="https://lin.ee/W9BRLwf" target="_blank" rel="noopener">
                 <img src="assets/waraka-line-qr.webp" alt="笑加 -waraka- 公式LINE 友だち追加QRコード" width="160" height="160" />
               </a>
-              <div class="skill-strip">
-                <span>ChatGPT</span><span>ClaudeCode</span><span>Notion</span><span>Canva</span>
-                <span>Wix</span><span>GitHub Pages</span><span>Camera</span><span>YouTube</span>
-              </div>
             </div>
 
             <div class="about-text">
               <p>ChatGPTやClaude、Notionなどを日常的に使いながら、心理学・哲学・東洋医学など、気になった分野を勉強して発信に活用しています。</p>
               <p>ClaudeCodeでのアプリ開発、カメラでの舞台撮影、YouTube配信、Canva制作なども活動中。</p>
               <p>「難しそう」をできるだけわかりやすく、楽しく形にするのが好きです。</p>
+              <div class="skill-strip">
+                <span>ChatGPT</span><span>ClaudeCode</span><span>Notion</span><span>Canva</span>
+                <span>Wix</span><span>GitHub Pages</span><span>Camera</span><span>YouTube</span>
+              </div>
             </div>
           </div>
 
