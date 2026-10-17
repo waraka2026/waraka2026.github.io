@@ -352,6 +352,15 @@
     .project-card.pink { background: var(--pink); }
     .project-card.blue { background: var(--blue); }
 
+    .project-image img.project-fit {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 320px;
+      object-fit: contain;
+      padding: 6px;
+    }
+
     .project-image {
       display: grid;
       place-items: center;
@@ -1292,11 +1301,11 @@
 
         <section class="work-category" data-work-panel="note">
           <div class="project-list">
-            <a class="project-card blue" href="https://wara-log.jp/" target="_blank" rel="noopener">
-              <div class="project-image"><img src="assets/wara-log-preview.png" alt="笑ログ（wara-log.jp）のトップページ" loading="lazy" /></div>
+            <a class="project-card blue" href="https://digitalhack-note.com/" target="_blank" rel="noopener">
+              <div class="project-image"><img class="project-fit" src="assets/wara-log-top.png" alt="wara-log.のトップページ" width="1165" height="773" loading="lazy" /></div>
               <div class="project-info">
                 <span class="label">ブログ</span>
-                <h3>笑ログ</h3>
+                <h3>wara-log.</h3>
                 <p>本や哲学、心理学、AI、IT、ガジェットなど、日々の「ちょっと気になる」を掘り下げてまとめるブログ。</p>
                 <b>ブログを見る ↗</b>
               </div>
